@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  min-height: 60vh;
+}
+
+
+.topContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.topProductCard{
+  flex: 1;
+}
+
+.left{
+  flex: 1 0 50%;
+}
+
+.rigth{
+  flex: 1 0 45%;
+}
+
+.productImage {
+  margin: auto;
+ border-radius: 8px;
+  object-fit: cover;
+}
+
+.productTitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Hide the increment and decrement buttons in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the increment and decrement buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
